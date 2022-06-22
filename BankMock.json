@@ -1,0 +1,360 @@
+{
+  "uuid": "76e1757c-02f2-4277-aac8-3f69d02dd4a9",
+  "lastMigration": 20,
+  "name": "BankMock",
+  "endpointPrefix": "api/",
+  "latency": 0,
+  "port": 4000,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "c2754a29-1a07-4047-85c2-f7927b623800",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "register/",
+      "responses": [
+        {
+          "uuid": "304e3738-7aac-47a3-8dfb-d81230dceea5",
+          "body": "{\n  \"message\": \"success\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "first_name",
+              "value": "",
+              "operator": "regex"
+            },
+            {
+              "target": "body",
+              "modifier": "last_name",
+              "value": "",
+              "operator": "regex"
+            },
+            {
+              "target": "body",
+              "modifier": "phone_number",
+              "value": "",
+              "operator": "regex"
+            },
+            {
+              "target": "body",
+              "modifier": "email",
+              "value": "",
+              "operator": "regex"
+            },
+            {
+              "target": "body",
+              "modifier": "password",
+              "value": "",
+              "operator": "regex"
+            },
+            {
+              "target": "body",
+              "modifier": "country",
+              "value": "",
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "2635ea99-54ea-4697-a7fc-5b712ef189c2",
+          "body": "{\n  \"message\": \"missing fields\",\n  \"required fields\": [\n    \"first_name\",\n    \"last_name\",\n    \"phone_number\",\n    \"email\",\n    \"password\",\n    \"country\"\n  ]\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "cad00bf3-9a56-46ed-be79-806cd4488caa",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "otp_verify/",
+      "responses": [
+        {
+          "uuid": "cd77b0e5-e71e-4a1b-8ce1-311ee349f284",
+          "body": "{\n  \"token\": \"qwertyuiopasdfghjklzxcvbnm\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "body",
+              "modifier": "OTP",
+              "value": "4638",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "e6960e12-ccf6-4b88-8f75-4f1d41df01d2",
+          "body": "{\n  \"message\": \"invalid OTP\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "49fc5d02-0cee-44a5-895a-bb201eed501c",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "user/",
+      "responses": [
+        {
+          "uuid": "cbfe3976-2eaa-4d5c-8f6d-a2d02afe53e9",
+          "body": "{\n  \"id\": 1\n  \"first_name\": \"Rza\",\n  \"last_name\": \"Ismayilov\",\n  \"phone_number\": \"0558842654\",\n  \"email\": \"rzaismail82@gmail.com\",\n  \"country\": \"AZ\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer qwertyuiopasdfghjklzxcvbnm",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "655bbe87-5b40-4ea5-b725-c0b15ea9d0cc",
+          "body": "{\n  \"message\": \"invalid token\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "e2a3e31a-2b66-4eae-b276-5c225350fd73",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "card/",
+      "responses": [
+        {
+          "uuid": "fe9ee99d-4305-4522-a6e9-20f1ce3420b0",
+          "body": "{\n  \"id\": 1,\n  \"balance\": 5760.19,\n  \"currency\": \"$\",\n  \"code\": \"2524 4352 7553 4552\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer qwertyuiopasdfghjklzxcvbnm",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "9c7880d1-b6c5-4a13-927b-0eadaea778fb",
+          "body": "{\n  \"message\": \"invalid token\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "b54399c8-934f-461a-8f67-5252b8758dfe",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "transaction/",
+      "responses": [
+        {
+          "uuid": "afc28d1a-f66e-49a0-a0eb-3d5a524006b6",
+          "body": "[\n  {\n    \"amount\": -50.6,\n    \"description\": \"Sent to Wilfred Alfred\",\n    \"in\": false,\n    \"date\": {\n      \"day\": 6,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 150.0,\n    \"description\": \"Deposit into spare\",\n    \"in\": true,\n    \"date\": {\n      \"day\": 3,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 40.3,\n    \"description\": \"From Victoria Ja\",\n    \"in\": true,\n    \"date\": {\n      \"day\": 1,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer qwertyuiopasdfghjklzxcvbnm",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "c1e9a320-e2a9-49f8-94d2-709021ee97e7",
+          "body": "{\n  \"message\": \"invalid token\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    },
+    {
+      "uuid": "28b1915c-47c6-41c3-b852-4c085e7839b7",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "notification_count/",
+      "responses": [
+        {
+          "uuid": "cf168dc1-4039-4f33-aa09-2fe5600d6f44",
+          "body": "{\n  \"count\": 3\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "header",
+              "modifier": "Authorization",
+              "value": "Bearer qwertyuiopasdfghjklzxcvbnm",
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false
+        },
+        {
+          "uuid": "f79d70b7-4395-4615-a001-23090aa9d63f",
+          "body": "{\n  \"message\": \"invalid token\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "randomResponse": false,
+      "sequentialResponse": false
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
