@@ -3,7 +3,7 @@
   "lastMigration": 20,
   "name": "BankMock",
   "endpointPrefix": "api/",
-  "latency": 0,
+  "latency": 2000,
   "port": 4000,
   "hostname": "0.0.0.0",
   "routes": [
@@ -15,9 +15,9 @@
       "responses": [
         {
           "uuid": "304e3738-7aac-47a3-8dfb-d81230dceea5",
-          "body": "{\n  \"message\": \"success\"\n}",
+          "body": "",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 202,
           "label": "",
           "headers": [],
           "filePath": "",
@@ -95,7 +95,7 @@
           "uuid": "cd77b0e5-e71e-4a1b-8ce1-311ee349f284",
           "body": "{\n  \"token\": \"qwertyuiopasdfghjklzxcvbnm\"\n}",
           "latency": 0,
-          "statusCode": 200,
+          "statusCode": 201,
           "label": "",
           "headers": [],
           "filePath": "",
@@ -141,7 +141,7 @@
       "responses": [
         {
           "uuid": "cbfe3976-2eaa-4d5c-8f6d-a2d02afe53e9",
-          "body": "{\n  \"id\": 1\n  \"first_name\": \"Rza\",\n  \"last_name\": \"Ismayilov\",\n  \"phone_number\": \"0558842654\",\n  \"email\": \"rzaismail82@gmail.com\",\n  \"country\": \"AZ\"\n}",
+          "body": "{\n  \"id\": 1,\n  \"first_name\": \"Rza\",\n  \"last_name\": \"Ismayilov\",\n  \"phone_number\": \"0558842654\",\n  \"email\": \"rzaismail82@gmail.com\",\n  \"country\": \"AZ\"\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -189,7 +189,7 @@
       "responses": [
         {
           "uuid": "fe9ee99d-4305-4522-a6e9-20f1ce3420b0",
-          "body": "{\n  \"id\": 1,\n  \"balance\": 5760.19,\n  \"currency\": \"$\",\n  \"code\": \"2524 4352 7553 4552\"\n}",
+          "body": "[\n  {\n    \"id\": 1,\n    \"balance\": 5760.19,\n    \"currency\": \"$\",\n    \"code\": \"2524435275534552\"\n  },\n  {\n    \"id\": 2,\n    \"balance\": 3240.51,\n    \"currency\": \"$\",\n    \"code\": \"8534462642851373\"\n  }\n]\n",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -237,7 +237,7 @@
       "responses": [
         {
           "uuid": "afc28d1a-f66e-49a0-a0eb-3d5a524006b6",
-          "body": "[\n  {\n    \"amount\": -50.6,\n    \"description\": \"Sent to Wilfred Alfred\",\n    \"in\": false,\n    \"date\": {\n      \"day\": 6,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 150.0,\n    \"description\": \"Deposit into spare\",\n    \"in\": true,\n    \"date\": {\n      \"day\": 3,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 40.3,\n    \"description\": \"From Victoria Ja\",\n    \"in\": true,\n    \"date\": {\n      \"day\": 1,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n]",
+          "body": "[\n  {\n    \"amount\": -50.6,\n    \"description\": \"Sent to Wilfred Alfred\",\n    \"incoming\": false,\n    \"date\": {\n      \"day\": 6,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 150.0,\n    \"description\": \"Deposit into spare\",\n    \"incoming\": true,\n    \"date\": {\n      \"day\": 3,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 40.3,\n    \"description\": \"From Victoria Ja\",\n    \"incoming\": true,\n    \"date\": {\n      \"day\": 1,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",
