@@ -69,8 +69,10 @@ struct TransactionDate: Decodable {
 }
 
 struct TransactionResponse: Decodable {
+    var amount: Double
     var description: String
     var incoming: Bool
+    var currency: String
     var date: TransactionDate
 }
 
@@ -78,4 +80,11 @@ struct TransactionResponse: Decodable {
 
 struct NotificationCountResponse: Decodable {
     var count: Int
+}
+
+// MARK: Input Field Data Structures
+
+struct InputFieldInfo {
+    var fieldType: FieldType
+    var placeholder: String
 }

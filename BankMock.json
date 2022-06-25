@@ -3,7 +3,7 @@
   "lastMigration": 20,
   "name": "BankMock",
   "endpointPrefix": "api/",
-  "latency": 2000,
+  "latency": 5000,
   "port": 4000,
   "hostname": "0.0.0.0",
   "routes": [
@@ -237,7 +237,7 @@
       "responses": [
         {
           "uuid": "afc28d1a-f66e-49a0-a0eb-3d5a524006b6",
-          "body": "[\n  {\n    \"amount\": -50.6,\n    \"description\": \"Sent to Wilfred Alfred\",\n    \"incoming\": false,\n    \"date\": {\n      \"day\": 6,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 150.0,\n    \"description\": \"Deposit into spare\",\n    \"incoming\": true,\n    \"date\": {\n      \"day\": 3,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 40.3,\n    \"description\": \"From Victoria Ja\",\n    \"incoming\": true,\n    \"date\": {\n      \"day\": 1,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n]",
+          "body": "[\n  {\n    \"amount\": 50.6,\n    \"description\": \"Sent to Wilfred Alfred\",\n    \"incoming\": false,\n    \"currency\": \"$\",\n    \"date\": {\n      \"day\": 6,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 150.0,\n    \"description\": \"Deposit into spare\",\n    \"incoming\": true,\n    \"currency\": \"$\",\n    \"date\": {\n      \"day\": 3,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n  {\n    \"amount\": 40.3,\n    \"description\": \"From Victoria Ja\",\n    \"incoming\": true,\n    \"currency\": \"$\",\n    \"date\": {\n      \"day\": 1,\n      \"month\": \"May\",\n      \"year\": 2022\n    }\n  },\n]",
           "latency": 0,
           "statusCode": 200,
           "label": "",

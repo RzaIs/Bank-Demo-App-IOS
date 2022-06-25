@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3274974E286649260031E96F /* CompletionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274974D286649260031E96F /* CompletionVC.swift */; };
+		3274975128665A130031E96F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274975028665A130031E96F /* HomeVC.swift */; };
+		3274975328665A450031E96F /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274975228665A450031E96F /* TopView.swift */; };
+		327497552866611B0031E96F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327497542866611B0031E96F /* CardView.swift */; };
+		32749757286671060031E96F /* TransactionsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32749756286671060031E96F /* TransactionsTableView.swift */; };
+		327497592866726C0031E96F /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327497582866726C0031E96F /* TransactionView.swift */; };
+		327497642866843D0031E96F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274975B2866843D0031E96F /* Inter-Regular.ttf */; };
+		327497652866843D0031E96F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274975C2866843D0031E96F /* Inter-SemiBold.ttf */; };
+		327497662866843D0031E96F /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274975D2866843D0031E96F /* Inter-Thin.ttf */; };
+		327497672866843D0031E96F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274975E2866843D0031E96F /* Inter-Bold.ttf */; };
+		327497682866843D0031E96F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274975F2866843D0031E96F /* Inter-Light.ttf */; };
+		327497692866843D0031E96F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327497602866843D0031E96F /* Inter-Medium.ttf */; };
+		3274976A2866843D0031E96F /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327497612866843D0031E96F /* Inter-ExtraBold.ttf */; };
+		3274976B2866843D0031E96F /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327497622866843D0031E96F /* Inter-ExtraLight.ttf */; };
+		3274976C2866843D0031E96F /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 327497632866843D0031E96F /* Inter-Black.ttf */; };
+		3274976E286684500031E96F /* UIFontCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3274976D286684500031E96F /* UIFontCustom.swift */; };
+		3287994E28642C0E00AE117D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287994D28642C0E00AE117D /* RegisterVC.swift */; };
 		32C1EC762863CDE600D184BB /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1EC752863CDE600D184BB /* APIController.swift */; };
 		32C1EC792863CEF100D184BB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 32C1EC782863CEF100D184BB /* Alamofire */; };
 		32C1EC7C2863CF0000D184BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 32C1EC7B2863CF0000D184BB /* SnapKit */; };
@@ -15,21 +32,50 @@
 		32C1EC832863CF2500D184BB /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 32C1EC822863CF2500D184BB /* RxRelay */; };
 		32C1EC852863CF2500D184BB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 32C1EC842863CF2500D184BB /* RxSwift */; };
 		32C1EC872863D34F00D184BB /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1EC862863D34F00D184BB /* Models.swift */; };
+		32CF208F2864EBB100EE42EB /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF208E2864EBB100EE42EB /* InputField.swift */; };
+		32CF20912864F11900EE42EB /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF20902864F11900EE42EB /* UIColorHex.swift */; };
+		32CF20932864F55F00EE42EB /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF20922864F55F00EE42EB /* SelectView.swift */; };
+		32CF20952864F6D600EE42EB /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF20942864F6D600EE42EB /* Countries.swift */; };
+		32CF20982865299B00EE42EB /* ValidationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF20972865299B00EE42EB /* ValidationVC.swift */; };
+		32CF209A28652EC500EE42EB /* OTPField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF209928652EC500EE42EB /* OTPField.swift */; };
+		32CF209D28653E2600EE42EB /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF209C28653E2600EE42EB /* LoadingVC.swift */; };
 		32E0949128634C5900F59BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E0949028634C5900F59BD9 /* AppDelegate.swift */; };
 		32E0949328634C5900F59BD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E0949228634C5900F59BD9 /* SceneDelegate.swift */; };
-		32E0949528634C5900F59BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E0949428634C5900F59BD9 /* ViewController.swift */; };
 		32E0949828634C5900F59BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E0949628634C5900F59BD9 /* Main.storyboard */; };
 		32E0949A28634C5B00F59BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32E0949928634C5B00F59BD9 /* Assets.xcassets */; };
 		32E0949D28634C5B00F59BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E0949B28634C5B00F59BD9 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3274974D286649260031E96F /* CompletionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionVC.swift; sourceTree = "<group>"; };
+		3274975028665A130031E96F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		3274975228665A450031E96F /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		327497542866611B0031E96F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		32749756286671060031E96F /* TransactionsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsTableView.swift; sourceTree = "<group>"; };
+		327497582866726C0031E96F /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		3274975B2866843D0031E96F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		3274975C2866843D0031E96F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		3274975D2866843D0031E96F /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		3274975E2866843D0031E96F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		3274975F2866843D0031E96F /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		327497602866843D0031E96F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		327497612866843D0031E96F /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		327497622866843D0031E96F /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		327497632866843D0031E96F /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		3274976D286684500031E96F /* UIFontCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontCustom.swift; sourceTree = "<group>"; };
+		3287994D28642C0E00AE117D /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		32C1EC752863CDE600D184BB /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
 		32C1EC862863D34F00D184BB /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		32CF208E2864EBB100EE42EB /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
+		32CF20902864F11900EE42EB /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		32CF20922864F55F00EE42EB /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		32CF20942864F6D600EE42EB /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		32CF20972865299B00EE42EB /* ValidationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationVC.swift; sourceTree = "<group>"; };
+		32CF209928652EC500EE42EB /* OTPField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPField.swift; sourceTree = "<group>"; };
+		32CF209C28653E2600EE42EB /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		32E0948D28634C5900F59BD9 /* BankDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E0949028634C5900F59BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32E0949228634C5900F59BD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		32E0949428634C5900F59BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		32E0949728634C5900F59BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		32E0949928634C5B00F59BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32E0949C28634C5B00F59BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +99,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3274974F286659FE0031E96F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				3274975028665A130031E96F /* HomeVC.swift */,
+				3274975228665A450031E96F /* TopView.swift */,
+				327497542866611B0031E96F /* CardView.swift */,
+				32749756286671060031E96F /* TransactionsTableView.swift */,
+				327497582866726C0031E96F /* TransactionView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		3274975A286684090031E96F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				327497632866843D0031E96F /* Inter-Black.ttf */,
+				3274975E2866843D0031E96F /* Inter-Bold.ttf */,
+				327497612866843D0031E96F /* Inter-ExtraBold.ttf */,
+				327497622866843D0031E96F /* Inter-ExtraLight.ttf */,
+				3274975F2866843D0031E96F /* Inter-Light.ttf */,
+				327497602866843D0031E96F /* Inter-Medium.ttf */,
+				3274975B2866843D0031E96F /* Inter-Regular.ttf */,
+				3274975C2866843D0031E96F /* Inter-SemiBold.ttf */,
+				3274975D2866843D0031E96F /* Inter-Thin.ttf */,
+				3274976D286684500031E96F /* UIFontCustom.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		32CF208D2864E7E900EE42EB /* RegisterView */ = {
+			isa = PBXGroup;
+			children = (
+				3287994D28642C0E00AE117D /* RegisterVC.swift */,
+				32CF208E2864EBB100EE42EB /* InputField.swift */,
+				32CF20922864F55F00EE42EB /* SelectView.swift */,
+			);
+			path = RegisterView;
+			sourceTree = "<group>";
+		};
+		32CF20962865291B00EE42EB /* ValidationView */ = {
+			isa = PBXGroup;
+			children = (
+				32CF20972865299B00EE42EB /* ValidationVC.swift */,
+				32CF209928652EC500EE42EB /* OTPField.swift */,
+			);
+			path = ValidationView;
+			sourceTree = "<group>";
+		};
+		32CF209B28653D5500EE42EB /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				32CF209C28653E2600EE42EB /* LoadingVC.swift */,
+				3274974D286649260031E96F /* CompletionVC.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
 		32E0948428634C5900F59BD9 = {
 			isa = PBXGroup;
 			children = (
@@ -72,15 +175,21 @@
 		32E0948F28634C5900F59BD9 /* BankDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3274975A286684090031E96F /* Font */,
+				3274974F286659FE0031E96F /* HomeView */,
+				32CF209B28653D5500EE42EB /* LoadingView */,
+				32CF20962865291B00EE42EB /* ValidationView */,
+				32CF208D2864E7E900EE42EB /* RegisterView */,
 				32E0949028634C5900F59BD9 /* AppDelegate.swift */,
 				32E0949228634C5900F59BD9 /* SceneDelegate.swift */,
-				32E0949428634C5900F59BD9 /* ViewController.swift */,
-				32E0949628634C5900F59BD9 /* Main.storyboard */,
-				32E0949928634C5B00F59BD9 /* Assets.xcassets */,
-				32E0949B28634C5B00F59BD9 /* LaunchScreen.storyboard */,
-				32E0949E28634C5B00F59BD9 /* Info.plist */,
 				32C1EC752863CDE600D184BB /* APIController.swift */,
 				32C1EC862863D34F00D184BB /* Models.swift */,
+				32CF20902864F11900EE42EB /* UIColorHex.swift */,
+				32CF20942864F6D600EE42EB /* Countries.swift */,
+				32E0949928634C5B00F59BD9 /* Assets.xcassets */,
+				32E0949E28634C5B00F59BD9 /* Info.plist */,
+				32E0949628634C5900F59BD9 /* Main.storyboard */,
+				32E0949B28634C5B00F59BD9 /* LaunchScreen.storyboard */,
 			);
 			path = BankDemo;
 			sourceTree = "<group>";
@@ -158,7 +267,16 @@
 			files = (
 				32E0949D28634C5B00F59BD9 /* LaunchScreen.storyboard in Resources */,
 				32E0949A28634C5B00F59BD9 /* Assets.xcassets in Resources */,
+				327497682866843D0031E96F /* Inter-Light.ttf in Resources */,
+				327497662866843D0031E96F /* Inter-Thin.ttf in Resources */,
+				327497672866843D0031E96F /* Inter-Bold.ttf in Resources */,
+				3274976A2866843D0031E96F /* Inter-ExtraBold.ttf in Resources */,
+				327497642866843D0031E96F /* Inter-Regular.ttf in Resources */,
+				3274976C2866843D0031E96F /* Inter-Black.ttf in Resources */,
+				327497652866843D0031E96F /* Inter-SemiBold.ttf in Resources */,
+				3274976B2866843D0031E96F /* Inter-ExtraLight.ttf in Resources */,
 				32E0949828634C5900F59BD9 /* Main.storyboard in Resources */,
+				327497692866843D0031E96F /* Inter-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +288,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				32C1EC762863CDE600D184BB /* APIController.swift in Sources */,
-				32E0949528634C5900F59BD9 /* ViewController.swift in Sources */,
+				3274976E286684500031E96F /* UIFontCustom.swift in Sources */,
+				3274975328665A450031E96F /* TopView.swift in Sources */,
+				3274975128665A130031E96F /* HomeVC.swift in Sources */,
+				32CF209D28653E2600EE42EB /* LoadingVC.swift in Sources */,
 				32E0949128634C5900F59BD9 /* AppDelegate.swift in Sources */,
+				32CF208F2864EBB100EE42EB /* InputField.swift in Sources */,
+				32CF209A28652EC500EE42EB /* OTPField.swift in Sources */,
+				3287994E28642C0E00AE117D /* RegisterVC.swift in Sources */,
+				32749757286671060031E96F /* TransactionsTableView.swift in Sources */,
+				32CF20912864F11900EE42EB /* UIColorHex.swift in Sources */,
 				32E0949328634C5900F59BD9 /* SceneDelegate.swift in Sources */,
 				32C1EC872863D34F00D184BB /* Models.swift in Sources */,
+				3274974E286649260031E96F /* CompletionVC.swift in Sources */,
+				32CF20952864F6D600EE42EB /* Countries.swift in Sources */,
+				32CF20932864F55F00EE42EB /* SelectView.swift in Sources */,
+				327497552866611B0031E96F /* CardView.swift in Sources */,
+				32CF20982865299B00EE42EB /* ValidationVC.swift in Sources */,
+				327497592866726C0031E96F /* TransactionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
