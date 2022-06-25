@@ -99,9 +99,4 @@ class CompletionVC: UIViewController {
             }
         }
     }
-    
-    
-    deinit {
-        print("comp vc deinit")
-    }
 }
